@@ -1,10 +1,10 @@
 #import "T1Array.h"
 
 @implementation T1Array
-- (BOOL) isHappy:(NSArray*)array{
+- (BOOL)isHappy:(NSArray *)array {
     for (int i = 1; i < [array count] - 2; i++) {
          if ([array[i] intValue] > [array[i-1] intValue] + [array[i+1] intValue]) {
-             return NO;
+           return NO;
            }
     }
     return YES;
@@ -20,10 +20,10 @@
                 [mutableSadArray  removeObjectAtIndex:i];
             }
         happy = [self isHappy:mutableSadArray];
-        }}
+        }
+      }
     }
         NSArray *array = [NSArray arrayWithArray:mutableSadArray];
         return array;
 }
-
 @end
