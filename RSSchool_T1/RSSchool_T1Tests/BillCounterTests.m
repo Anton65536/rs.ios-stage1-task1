@@ -22,7 +22,7 @@
 }
 
 - (void)testCheckFunc4_DifferentSum {
-    NSArray *bill = @[@3, @10, @2, @9, @18, @25, @45];
+    NSArray *bill = @[@3, @10, @2, @9, @18, @25, @45]; // 112  splitbill56   94 annasholdpay47
     XCTAssertEqualObjects([[BillCounter new] compareResultForBill:bill notIncludingElementWithIndex:4 withGivenSum:@69], @"22");
 }
 @end
